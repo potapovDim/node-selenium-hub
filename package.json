@@ -1,0 +1,29 @@
+{
+  "name": "selenium-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potapovDim/node-selenium-hub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potapovDim/node-selenium-hub/issues"
+  },
+  "homepage": "https://github.com/potapovDim/node-selenium-hub#readme",
+  "dependencies": {
+    "get-port": "^4.1.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa2": "^2.0.0-alpha.7",
+    "node-fetch": "^2.3.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "test-fake-server": "^2.1.0"
+  }
+}
