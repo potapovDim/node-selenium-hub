@@ -1,6 +1,6 @@
 {
   "name": "selenium-hub",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/potapovDim/node-selenium-hub#readme",
   "dependencies": {
+    "electron": "^4.0.1",
     "get-port": "^4.1.0",
     "koa-bodyparser": "^4.2.1",
     "koa2": "^2.0.0-alpha.7",
