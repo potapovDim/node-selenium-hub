@@ -1,5 +1,8 @@
 {
   "chrome": {
     "driver": "./chromedriver"
+  },
+  "firefox": {
+    "driver": "./geckodriver"
   }
 }
