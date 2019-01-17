@@ -26,6 +26,7 @@
     document.querySelector('#path_to_browsers').addEventListener('change', (ev) => {
       document.querySelector('#aaa').innerHTML = ev.target.value
       console.log(ev.target.value)
+      test.testFn(ev.target.value)
     })
   </script>
 </body>
