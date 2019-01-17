@@ -2,9 +2,10 @@
   "name": "selenium-hub",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron ."
   },
   "repository": {
     "type": "git",
@@ -17,14 +18,14 @@
   },
   "homepage": "https://github.com/potapovDim/node-selenium-hub#readme",
   "dependencies": {
-    "electron": "^4.0.1",
     "get-port": "^4.1.0",
     "koa-bodyparser": "^4.2.1",
     "koa2": "^2.0.0-alpha.7",
     "node-fetch": "^2.3.0",
-    "request": "^2.88.0"
+    "test-fake-server": "^2.1.0"
   },
   "devDependencies": {
-    "test-fake-server": "^2.1.0"
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.5"
   }
 }

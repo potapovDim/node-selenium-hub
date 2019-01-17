@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <h1></h1>
+  <!-- All of the Node.js APIs are available in this renderer process. -->
+  We are using Node.js
+  <div id="aaa">Test</div>
+  <script>document.write(process.versions.node)</script>,
+  Chromium
+  <script>document.write(process.versions.chrome)</script>
+  and Electron
+
+  <script>document.write(process.versions.electron)</script>.
+  <input type="text" id="path_to_browsers">
+  <script>
+    // You can also require other files to run in this process
+    const test = require('./renderer.js')
+    console.log(test)
+
+    document.querySelector('#path_to_browsers').addEventListener('change', (ev) => {
+      document.querySelector('#aaa').innerHTML = ev.target.value
+      console.log(ev.target.value)
+    })
+  </script>
+</body>
+
+</html>
