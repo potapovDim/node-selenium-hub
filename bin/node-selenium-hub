@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+'use strict';
+
+process.title = 'node-selenium-hub'
+
+const procArgv = require('minimist')(process.argv.slice(2))
+
+const nodeSeleniumHub = require('../lib')
+
+try {
+  console.log(procArgv)
+  const app = nodeSeleniumHub(procArgv.browsers)
+  app.listen(+procArgv.port)
+} catch(e) {
+  console.error(e.message)
+}

@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": "main.js",
+  "bin": {
+    "node-selenium-hub": "./bin/node-selenium-hub"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
@@ -23,11 +26,13 @@
     "get-port": "^4.1.0",
     "koa-bodyparser": "^4.2.1",
     "koa2": "^2.0.0-alpha.7",
+    "minimist": "^1.2.0",
     "node-fetch": "^2.3.0",
     "test-fake-server": "^2.1.0"
   },
   "devDependencies": {
     "electron": "^4.0.1",
-    "electron-builder": "^20.38.5"
+    "electron-builder": "^20.38.5",
+    "pkg": "^4.3.7"
   }
 }
