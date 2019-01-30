@@ -10,7 +10,8 @@ const nodeSeleniumHub = require('../lib')
 
 try {
   console.log(procArgv)
-  const app = nodeSeleniumHub(procArgv.browsers)
+  const sessionTime = procArgv.time ? +procArgv.time : undefined
+  const app = nodeSeleniumHub(procArgv.browsers, time)
   app.listen(+procArgv.port)
 } catch(e) {
   console.error(e.message)
